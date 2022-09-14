@@ -13,8 +13,9 @@ if y < month :
     y = y + 1
 else:
     y = 1
-
-if y < month :
-    month 
+    if x == 12 :
+        x = 1
+    else:
+        x = x + 1
 
 print("Next Day: {}/{}" .format(x, y))
