@@ -1,18 +1,8 @@
 a = float(input("Enter From Value: "))
 
 b = input("Enter From Unit (in, ft, yd, mi): ")
-if b == "in, ft, yd, mi" :
-    
-else:
-    print("From Unit is invalid")
-    exit(0)
 
 c = input("Enter To Unit (in, ft, yd, mi): ")
-if c == "in, ft, yd, mi" :
-    c == c
-else:
-    print("To Unit is invalid")
-    exit(0)
 
 if b == "in" and c == "ft" :
     x = a * round(0.08333333333, 7)
