@@ -1,0 +1,1 @@
+int (input("Enter a Number (zero to quit)"))
