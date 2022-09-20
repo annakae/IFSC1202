@@ -1,9 +1,11 @@
-sum = 0
+highest = 0
+index = 0
 
 while True:
-    n = int(input("Enter a Number (zero to quit): "))
-    sum += n
-    if n == 0: 
+    num = int(input("Enter a Number (zero to quit): "))
+    if (num==0):
         break
+    if num > highest:
+        highest = num
 
-print("Sum:", sum)
+print ("Maximum:", highest)
