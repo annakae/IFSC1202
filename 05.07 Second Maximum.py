@@ -4,11 +4,9 @@ y = -1
 x = 1
 n = 1
 
-while n != 0:
-    n = int(input("Enter First Number: "))
-    n = int(input("Enter Second Number: "))
-    break
-
+n = int(input("Enter First Number: "))
+n = int(input("Enter Second Number: "))
+    
 while True:
     n = int(input("Enter a Number (zero to quit): "))
     if n == 0:
