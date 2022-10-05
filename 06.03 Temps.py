@@ -1,7 +1,15 @@
-def FahrToCel(f, c):
-    return -c = (f - 32) * 5/9
+file = open("06.03 FTemps.txt", "r")
+num = 0
 
-x = open("/workspace/IFSC1202/06.03 FTemps.txt", "r")
-y = open("06.03 FTemps.txt", "w")
+for f in file:
+    c = (float(f) - 32) * 5/9
+    c = round(c,1)
+    f = open("06.03 CTemps.txt", "a")
 
-output = 
+    f.write(str(c))
+    f.write('\n')
+    f.close()
+
+    num = num + 1
+
+print(str(num)+" records written")
