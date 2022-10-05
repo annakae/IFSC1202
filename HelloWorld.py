@@ -12,3 +12,9 @@ with open(fileToRead,"r") as f:
 fout.close()
 print(readCount,'records read')
 print(writeCount,'records written')
+
+for i in range(len(lsta)):
+    if(lsta[i] != lstb[i]):
+        print(f"Line: {i+1} - {lsta[i]}")
+        print(f"Line: {i+1} - {lstb[i]}")
+        count += 1
