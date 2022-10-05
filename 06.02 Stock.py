@@ -1,12 +1,10 @@
-file = open("06.02 Stock.txt","r")
+def percentchange(today, yesterday):
+    return ((today - yesterday) / (yesterday)) * 100
 
-data = file.read()
-data = (float(i) for i in data.split())
+f = open(" 06.02 Stock.txt","r")
+s = f.read().split("\n")
+print("{0:>10s}{1:>10s}".format("Price","Change"))
+print("{0:>10s}{1:>10s}".format(s[0],""))
 
-print("Price       Change")
-
-print(data(0))
-
-for i in range(1,len(data)):
-    percent = ((data(i) - data(i - 1) / data(i - 1) * 100))
-    print("{:.2f}    {:+.2f}%".format(data(i),percent))
+for i in range(1,len(s)):
+    print("{0:>10s}{1:>10.2f}%".format(s[i],percentchange(float(s[i]),float(s[i-1])))) 
