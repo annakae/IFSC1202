@@ -5,3 +5,5 @@ for i in range(len(a) // 2, len(a)):
 
 for i in range(len(a) // 2):
     print(a[i], end = "")
+
+print("")
