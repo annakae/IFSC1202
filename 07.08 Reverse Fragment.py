@@ -1,6 +1,13 @@
-t = str(input("Enter a string: "))
+s = str(input("Enter a string: "))
 
-if t.count("h") >= 2:
-    print(t[:t.find("h")] + t[t.rfind("h") + 1:])
+a = s.find('h')
+a += 1
+b = s.rfind('h')
+if(a==b):
+    print(a)
 else:
-    print(t.count("h"))
+    print(s[:a])
+
+t = s[a:b]
+print(t[::-1])
+print(s[b:])
