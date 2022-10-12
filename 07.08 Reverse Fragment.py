@@ -6,8 +6,5 @@ b = s.rfind('h')
 if(a==b):
     print(a)
 else:
-    print(s[:a])
-
-t = s[a:b]
-print(t[::-1])
-print(s[b:])
+    t = s[a:b]
+print(s[:a] + t[::-1] + s[b:])
