@@ -1,5 +1,4 @@
-str = input ("Enter a string : ")
-
+str = input ("Enter a string: ")
 strr = str[::-1]
 index1 = str.find('f')
 
@@ -7,7 +6,7 @@ if index1 == -1:
   print(0)
 else:
   index = strr.find('f')
-  n = len(str)
+  n= len(str)
   index2 = n - index
 
   if index1 == index2:
