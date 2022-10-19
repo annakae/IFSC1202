@@ -1,25 +1,22 @@
-s = input("Enter Values Seperated by Spaces: ") 
-a = []
-b = s.split(" ")
-n = len(b)
+x = input("Enter Values Seperated by Spaces: ")
+list = x.split(" ")
+max = list [0]
+l = len(list)
 
-for i in range(n):
-    bb = (int)(b[i])
-    a = a + [bb]
+for i in range (l):
+    if list [i]>max:
+        max = list [i]
 
-max = -9999
-min = 9999
-for i in range(n):
-    if(a[i]>max):
-        max = a[i]
-        pos1 = i
-    if(a[i] < min):
-        min = a[i]
-        pos2 = i
+x = list.index (max)
+min = list [0]
 
-temp = a[pos1]
-a[pos1] = a[pos2]
-a[pos2] = temp
+for i in range (1):
+    if list [i]<min:
+        min = list [i]
 
-for i in a:
-    print("Swapped Minimum and Maximum: ",i)
+y = list.index (min)
+list[x] = min
+list[y] = max 
+final = " ".join(list)
+
+print("Swapped Minimum and Maximum: ",final)
