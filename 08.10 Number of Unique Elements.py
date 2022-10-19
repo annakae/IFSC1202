@@ -11,4 +11,4 @@ for i in range(n):
         if inputlist[i] == inputlist[j] and i != j:
             count += 1
     if count == 1:
-        print(inputlist[i])
+        print("Unique Elements: " ,inputlist[i])
