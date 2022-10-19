@@ -1,4 +1,4 @@
-s = input()
+s = input("Enter Values Seperated by Spaces: ")
 my_list_str = s.split()
 my_list = []
 
