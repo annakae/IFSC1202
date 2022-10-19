@@ -6,8 +6,7 @@ file = open("08.11 USPopulation.txt", "r")
 
 for i in file:
     list_population.append(int(i) * 1000)
-    file.close()
-
+file.close
 for i in range(41):
     if(i >= 1):
         change=list_population[i]-list_population[i-1]
@@ -16,7 +15,7 @@ for i in range(41):
         list_percent.append(percent_change)
 j = 0
 
-print("Year\t\tPopulation\t\tChnage\t\tPercent Change")
+print("Year\t\tPopulation\t\tChange\t\tPercent Change")
 
 for year in range(1950, 1991):
     if(j == 0):
@@ -27,7 +26,7 @@ for year in range(1950, 1991):
 
 average = sum(list_change) / 41
 
-print("Average population change: ",change)
+print("Average Change: ",change)
 maxi = list_change[1]
 mini = list_change[1]
 max_index = 0
@@ -41,5 +40,5 @@ for i in range(2,len(list_change)):
         mini = list_change[i]
         min_index = i
 
-print("Maximum change and year: ",  maxi, 1950 + max_index)
-print("Minimum change and year: ", mini, 1950 + min_index)
+print("Minimum Change: {} ({})".format(mini, 1950 + min_index))
+print("Maximum Change: {} ({})".format(maxi, 1950 + max_index))
