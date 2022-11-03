@@ -1,6 +1,6 @@
 class RetailItem:
 
-    def __init__(self, desc='', units=0, price=0.0):
+    def __init__(self, desc = '', units = 0, price = 0.0):
         self.description = desc
         self.unitsOnHand = units
         self.price = price
@@ -11,7 +11,7 @@ class RetailItem:
 
 def main():
     file = '10.02 Inventory.txt'
-    items=[]
+    items = []
     file_in = open(file, 'r')
     for line in file_in:
         data = line.strip().split(',')
