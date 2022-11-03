@@ -4,7 +4,6 @@ class Pet:
     self.Type = ""
     self.Age = 0
 
-#open file
 f = open("10.01 Pets.txt")
 list = []
 
